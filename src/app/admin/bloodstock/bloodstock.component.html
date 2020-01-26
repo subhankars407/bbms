@@ -1,0 +1,57 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+            <a class="navbar-brand" href="#">Home</a>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a routerLink="/admin-stocklist">Stock Blood list</a></li>
+                <li><a routerLink='/admin-outstocklist'>Out of stock </a></li>
+                <li><a routerLink="/donorlist">Donor list</a></li>
+                <li><a routerLink="/NGOlist">NGO list</a></li>
+                <li><a routerLink="/recipient">Recipients</a></li>
+
+
+
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+<div>
+    <h1>Stock blood list</h1>
+</div>
+
+<a class="btn btn-primary pull-right product-add" routerLink="/addStock">Add Stock</a>
+
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th> Name</th>
+            <th> Quantity</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let stock of stocks">
+            <td>{{stock.bloodGroup}}</td>
+            <td>{{stock.unit}}unit</td>
+
+            <td text-align="center">
+                <button (click)="onDelete()" class="btn btn-danger">Delete <i
+                        class="glyphicon glyphicon-trash"></i></button>
+                <a routerLink="/menu-update" class="btn btn-warning"> Edit<i class="glyphicon glyphicon-pencil"></i></a>
+
+            </td>
+        </tr>
+
+
+    </tbody>
+</table>

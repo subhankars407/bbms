@@ -1,0 +1,49 @@
+<h1> Recipient Registration</h1>
+
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <div class="login">
+
+
+            <div class="form">
+                <div class="form-group">
+                    <label for=""> Name</label>
+                    <input [(ngModel)]="name" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input [(ngModel)]="email" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input [(ngModel)]="Password" type="password" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Age</label>
+                    <input [(ngModel)]="age" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Address</label>
+                    <input [(ngModel)]="address" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">City</label>
+                    <input [(ngModel)]="city" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">mobile Number</label>
+                    <input [(ngModel)]="mobileNo" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <button (click)="onRegister()" class="btn btn-success">Register</button>
+                    <a routerLink="/recipient-login" class="btn btn-danger pull-right">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+</div>

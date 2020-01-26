@@ -1,0 +1,33 @@
+<h1>ADD NGO details</h1>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <div class="login">
+
+            <div class="form">
+                <div class="form-group">
+                    <label for="">Name</label>
+                    <input [(ngModel)]="name" type="email" class="form-control" placeholder="Enter NGO Name">
+                </div>
+                <div class="form-group">
+                    <label for="">City</label>
+                    <input [(ngModel)]="city" type="email" class="form-control" placeholder="Enter City">
+                </div>
+                <div class="form-group">
+                    <label for="">Address</label>
+                    <input [(ngModel)]="address" type="email" class="form-control" placeholder="Enter Address">
+                </div>
+                <div class="form-group">
+                    <label for="">Mobile Number</label>
+                    <input [(ngModel)]="mobileNo" type="number" placeholder="Enter 10 digit mobile number" class="
+                        form-control">
+                </div>
+                <div class="form-group">
+                    <button (click)="onCreate()" class="btn btn-success">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4"></div>
+</div>
